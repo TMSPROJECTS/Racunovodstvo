@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Finansijski plan - budžet</title>
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id=main>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Dokumenti</li>
+        <li class="breadcrumb-item active">Zahtev za sredstva</li>
+      </ol>
+      <div class="card mb-3">
+       <div class="card-header">
+          <i class="fa fa-table"></i> Zahtevi za transfer sredstava</div>
+          <div class ="row enterButton">
+          <a class="btn btn-primary btn-xl js-scroll-trigger pages" href="#" page_name="zahtevZaSredstvaUnos.html">Novi unos</a></div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>S</th>
+                  <th>L</th>
+                  <th>Virmani</th>
+                  <th>Dokument</th>
+                  <th>Datum</th>
+                  <th>Broj</th>
+                  <th>Račun</th>
+                  <th>Iznos</th>
+                  <th>Plaćeno</th>
+                  <th>Korisnik</th>
+                  <th>Poslednja izmena</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+               	  <th>S</th>
+                  <th>L</th>
+                  <th>Virmani</th>
+                  <th>Dokument</th>
+                  <th>Datum</th>
+                  <th>Broj</th>
+                  <th>Račun</th>
+                  <th>Iznos</th>
+                  <th>Plaćeno</th>
+                  <th>Korisnik</th>
+                  <th>Poslednja izmena</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                 <td>N</td>
+                 <td>L</td>
+                 <td>Virman</td>
+                 <td>ZS0111111</td>
+                 <td>17/05/2018</td>
+                 <td>963/2017</td>
+                 <td>840-5695-698455</td>
+                 <td><a class ="pages"href="#" page_name="namenaSredstava.html">5000</a></td>
+                 <td>2000</td>
+                 <td>Jaaaa</td>
+                 <td>17/05/2017</td>
+                </tr>
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="../js/sb-admin-datatables.min.js"></script>
+  <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>

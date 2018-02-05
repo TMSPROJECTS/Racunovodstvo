@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Dokumenti</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="finansijskiPlan.html">Finansijski plan</a></li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="rasporedjenostSredstava.html">Raspoređenost planiranih sredstava</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form id="zahtevForma" action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="punNazivPlana">Plan</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="punNazivPlana" name="punNazivPlana" disabled>
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumZahteva">* Zajednički naziv</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumZahteva" name="datumZahteva" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="program">* Program</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="program" id="program" class="form-control form-control-sm" required>
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="programskaAkt">* Programska aktivnost</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="programskaAkt" id="programskaAkt" class="form-control form-control-sm" required>
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="funkcija">* Funkcija</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="funkcija" id="funkcija" class="form-control form-control-sm" required>
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input id="prikaziDugme" type="submit" onclick = "" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Prikazi">
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv">Raspored sredstava</div>
+          
+           <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	<label for="planiraniIznos">blablabla</label>
+		             </div>
+		              <div class="col-md-4">
+		             	 <input class="form-control" id="planiraniIznos" name="planiraniIznos">
+		             </div>
+	             </div>
+	          </div>
+           </div>
+           
+           <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" onclick = "" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             </div>
+	          </div>
+          </div>
+        </form>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    
+    function reset() {
+        document.getElementById("zahtevForma").reset();
+    }
+    
+    </script>
+
+</body>
+</div>
+</html>

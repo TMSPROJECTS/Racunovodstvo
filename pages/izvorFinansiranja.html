@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Finansijski plan - izvor finansiranja</title>
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+      	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Pomoćni podaci</li>
+        <li class="breadcrumb-item active">Izvor finansiranja</li>
+      </ol>
+      <div class="card mb-3">
+       <div class="card-header">
+          <i class="fa fa-table"></i> Lista izvora finansiranja</div>
+          <div class ="row enterButton">
+          <a class="btn btn-primary btn-xl js-scroll-trigger pages" href="#" page_name="izvorFinansiranjaUnos.html">Novi unos</a></div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Šifra</th>
+                  <th>Naziv</th>
+                  <th>Uneo</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Šifra</th>
+                  <th>Naziv</th>
+                  <th>Uneo</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                 <td>Virman</td>
+                 <td>ZS0111111</td>
+                 <td>Milenko</td>
+                </tr>
+                <tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+  <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$("#main").empty();
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>

@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Dokumenti</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="zahtevZaSredstva.html">Zahtev za sredstva</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form id="zahtevForma" action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="dokument">Dokument</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="dokument" name="dokument">
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumZahteva">* Datum</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumZahteva" name="datumZahteva" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="brojZahteva">* Broj</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+		              <div class="col-md-4">
+		             	 <input class="form-control" id="brojZahteva" name="brojZahteva" required>
+		             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="racun">* Račun</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="racun" name="racun" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="ugovorDob">Ugovor dobavljača</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="ugovorDob" id="ugovorDob" class="form-control form-control-sm">
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+     	 <div class="row">
+              <div class="labela col-md-4">
+                 <label for="napomena">Napomena</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="napomena" name="napomena" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             	 <input type="button" onclick="reset()" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Poništi">
+	             	 <a class="btn btn-unos btn-xl js-scroll-trigger pages" href="#" page_name="zahtevZaSredstva.html">Odustani</a>
+	             </div>
+	          </div>
+          </div>
+        </form>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    
+    function reset() {
+        document.getElementById("zahtevForma").reset();
+    }
+    </script>
+
+</body>
+</div>
+</html>

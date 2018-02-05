@@ -1,0 +1,250 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Pomoćni podaci</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="program.html">Program</a></li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="programskaAktivnost.html">Programska aktivnost</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form id="programskaAktivnostForma" action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="program">Program</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="program" name="program" disabled>
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="id">ID</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="id" name="id" disabled>
+	             </div>
+	             
+	          </div>
+          </div>
+           <div class="row">
+              <div class="labela col-md-4">
+                 <label for="naziv">* Naziv</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="naziv" name="naziv" required>
+	             </div>
+	             
+	          </div>
+          </div>
+            <div class="separatorDiv">Funkcionalna klasifikacija</div>
+            
+          <div class="row">
+               <div class="labela col-md-4">
+                 <label for="klasifikacija"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	<TABLE id="dataTable" width="370px">
+							<tr>
+								<td><input style="width: 275px"class="form-control" disabled/> </td>
+								<td><input type="button" class="btn btn-unos obrisi btn-xl js-scroll-trigger" value= "Obriši" onclick="deleteRow('dataTable')"/></td>
+							</tr>
+						</TABLE>
+		             </div>
+		              <div class="col-md-4">
+			             
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+             <div class="row">
+               <div class="labela col-md-4">
+                 <label for="klasifikacija"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	 <select name="funkcija" id="funkcija" class="form-control form-control-sm" >
+			             <option value = "" selected>-- Izaberite --</option></select>
+		             </div>
+		              <div class="col-md-4">
+		             	 <input type="button" class="btn btn-unos btn-xl js-scroll-trigger" value="Dodaj" onclick="addRow('dataTable')"/>
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+	          
+	       <div class="separatorDiv">Izvori finansiranja</div>
+	       
+	       <div class="row">
+               <div class="labela col-md-4">
+                 <label for="izvoriFinansiranja"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	<table id="dataTable1" width="370px">
+							<tr>
+								<td><input style="width: 275px" class="form-control" disabled/> </td>
+								<td><input type="button" class="btn btn-unos obrisi btn-xl js-scroll-trigger" value= "Obriši" onclick="deleteRow('dataTable1')"/></td>
+							</tr>
+						</table>
+		             </div>
+		              <div class="col-md-4">
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+             <div class="row">
+               <div class="labela col-md-4">
+                 <label for="izvoriFinansiranja"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	 <select name="izvoriFinansiranja" id="izvoriFinansiranja" class="form-control form-control-sm" >
+			             <option value = "" selected>-- Izaberite --</option></select>
+		             </div>
+		              <div class="col-md-4">
+		             	 <input type="button" class="btn btn-unos btn-xl js-scroll-trigger" value="Dodaj" onclick="addRow('dataTable1')"/>
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+	          
+	           <div class="separatorDiv">Grupa troškova</div>
+	       
+	       <div class="row">
+               <div class="labela col-md-4">
+                 <label for="grupaTroskova"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	<TABLE id="dataTable2" width="370px">
+							<tr>
+								<td><input style="width: 275px" class="form-control" disabled/> </td>
+								<td><input type="button" class="btn btn-unos obrisi btn-xl js-scroll-trigger" value= "Obriši" onclick="deleteRow('dataTable2')"/></td>
+							</tr>
+						</TABLE>
+		             </div>
+		              <div class="col-md-4">
+			             
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+             <div class="row">
+               <div class="labela col-md-4">
+                 <label for="grupaTroskova"></label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	 <select name="grupaTroskova" id="grupaTroskova" class="form-control form-control-sm" >
+			             <option value = "" selected>-- Izaberite --</option></select>
+		             </div>
+		              <div class="col-md-4">
+		             	 <input type="button" class="btn btn-unos btn-xl js-scroll-trigger" value="Dodaj" onclick="addRow('dataTable')"/>
+		             </div>
+	             </div>
+	          </div>
+	          </div>
+        <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             	 <input type="button" onclick="reset()" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Poništi">
+	             	 <a class="btn btn-unos btn-xl js-scroll-trigger pages" href="#" page_name="dokaznica.html">Odustani</a>
+	             </div>
+	          </div>
+          </div>
+        </form>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$("#main").empty();
+		$('#main').load(page_name);
+		});
+	});
+    
+    function reset() {
+        document.getElementById("programskaAktivnostForma").reset();
+    }
+
+    </script>
+    <script language="javascript">
+    	var i = 0;
+		function addRow(tableID) {
+			i++;
+			var table = document.getElementById(tableID);
+
+			var rowCount = table.rows.length;
+			var row = table.insertRow(rowCount);
+			
+			var cell1 = row.insertCell(0);
+			var element1 = document.createElement("input");
+			element1.name="txtbox[]";
+			element1.disabled = true;
+			element1.className = "form-control";
+			cell1.appendChild(element1);
+
+
+			var cell2 = row.insertCell(1);
+			var element2 = document.createElement("input");
+			element2.type = "button";
+			element2.value = "Obriši";
+			element2.className = "btn btn-unos obrisi btn-xl js-scroll-trigger";
+			element2.id = "deleteButton" + i;
+			debugger;
+			cell2.appendChild(element2);
+			//document.getElementById(element2.id).setAttribute("onclick" , "parent().parent().deleteRow('"+ tableID +"')")
+
+
+		}
+		function deleteRow(tableID) {
+			debugger;
+			try {
+			var table = document.getElementById(tableID);
+			var rowCount = table.rows.length;
+
+			for(var i=0; i<rowCount; i++) {
+				var row = table.rows[i];
+				var inputField = row.cells[0].childNodes[0];
+				if(null != inputField) {
+					table.deleteRow(i);
+					rowCount--;
+					i--;
+				}
+
+
+			}
+			}catch(e) {
+				alert(e);
+			}
+		}
+
+	
+	</script>
+
+</body>
+</div>
+</html>

@@ -1,0 +1,106 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Finansijski plan - ugovori</title>
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id=main>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Osnovni podaci</li>
+        <li class="breadcrumb-item active">Komitenti</li>
+        <li class="breadcrumb-item active">Ugovori</li>
+        <li class="breadcrumb-item active">Ugovori partnera</li>
+      </ol>
+      <div class="card mb-3">
+       <div class="card-header">
+          <i class="fa fa-table"></i> Lista ugovora partnera</div>
+          <div class ="row enterButton">
+          <a class="btn btn-primary btn-xl js-scroll-trigger pages" href="#" page_name="ugovoriPartneraUnos.html">Novi unos</a></div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>Šifra ugovora</th>
+                  <th>Broj ugovora</th>
+                  <th>Datum ugovora</th>
+                  <th>Važi do</th>
+                  <th>Iznos ugovora</th>
+                  <th>Preostali iznos ugovora</th>
+                  <th>Opis</th>
+                  <th>Korisnik</th>
+                  <th>Datum unosa ugovora</th>
+                </tr>
+              </thead>
+              <tfoot>
+                <tr>
+                  <th>Šifra ugovora</th>
+                  <th>Broj ugovora</th>
+                  <th>Datum ugovora</th>
+                  <th>Važi do</th>
+                  <th>Iznos ugovora</th>
+                  <th>Preostali iznos ugovora</th>
+                  <th>Opis</th>
+                  <th>Korisnik</th>
+                  <th>Datum unosa ugovora</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                 <td>1234567</td>
+                 <td>UG1236547</td>
+                 <td>17/05/2017</td>
+                 <td>17/05/2018</td>
+                 <td>2000.00</td>
+                 <td>300.00</td>
+                 <td>Nesto ovde pise mnogooooo</td>
+                 <td>MARINA</td>
+                 <td>17/05/2017</td>
+                </tr>
+
+                 
+                
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="../js/sb-admin-datatables.min.js"></script>
+  <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>

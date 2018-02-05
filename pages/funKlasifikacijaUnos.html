@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Pomoćni podaci</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="funKlasifikacija.html">Funkcionalna klasifikacija</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form id="klasifikacijaForma" action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="sifra">* Šifra</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="sifra" name="sifra" required>
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="naziv">* Naziv</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="naziv" name="naziv" required>
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             	 <input type="button" onclick="reset()" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Poništi">
+	             	 <a class="btn btn-unos btn-xl js-scroll-trigger pages" href="#" page_name="funKlasifikacija.html">Odustani</a>
+	             </div>
+	          </div>
+          </div>
+        </form>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$("#main").empty();
+		$('#main').load(page_name);
+		});
+	});
+    
+    function reset() {
+        document.getElementById("klasifikacijaForma").reset();
+    }
+    </script>
+
+</body>
+</div>
+</html>

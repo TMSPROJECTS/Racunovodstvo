@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item active">Osnovni podaci</li>
+        <li class="breadcrumb-item active">Ugovori</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="ugovoriPartnera.html">Ugovori partnera</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="oznaka">Oznaka</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="oznaka" name="oznaka" disabled>
+	             </div>
+	             
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="sifPartnera">Partner</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+              	<div class="inputRow row">
+		              <div class="col-md-4">
+		             	 <input class="form-control" id="sifPartnera" name="sifPartnera">
+		             </div>
+		              <div class="col-md-4">
+		             	 <input class="form-control" id="punoImePartnera" name="punoImePartnera">
+		             </div>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="brUgovora">Broj ugovora</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="brUgovora" name="brUgovora">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumOd">Datum</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumOd" name="datumOd">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumDo">Važi do</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumDo" name="datumDo">
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv">Finansijski podaci ugovora</div>
+          
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="iznosUgovora">Iznos ugovora</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="number" class="form-control" id="iznosUgovora" name="iznosUgovora">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="ucesce">Iznos učešća</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="number" class="form-control" id="ucesce" name="ucesce" disabled>
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="preostaliIznos">Preostali iznos ugovora</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="number" class="currency form-control" id="preostaliIznos" name="preostaliIznos">
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv">Ostali podaci</div>
+          
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="opis">Opis</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <textarea rows="5" cols="100" class="form-control" id="opis" name="opis"></textarea>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             </div>
+	          </div>
+          </div>
+        </form>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>

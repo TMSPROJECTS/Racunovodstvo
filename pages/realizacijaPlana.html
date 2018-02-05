@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Dokumenti</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="finansijskiPlan.html">Finansijski plan</a></li>
+        <li class="breadcrumb-item active">Realizacija plana</li>
+      </ol>
+        <form id="realizacijaPlanaForma" action = "">
+           <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumOd">Za period od:</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumOd" name="datumOd">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumDo">do:</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumDo" name="datumDo">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="konto">Konto</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	  <input class="form-control" id="konto" name="konto">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="program">Program</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="program" id="program" class="form-control form-control-sm">
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	             <input type="checkbox" name="planiranaKonta">&nbsp&nbsp <b>Prikaži konta za koja postoje planirana sredstva</b><br>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input id="prikazi"  onclick = "" class="btn btn-unos btn-xl js-scroll-trigger pages realizacija" value ="Prikaži">
+	             	 <input onclick = "" class="btn btn-unos btn-xl js-scroll-trigger pages realizacija" value ="Štampaj">
+	             	 <input onclick = "" class="btn btn-unos btn-xl js-scroll-trigger pages realizacija" value ="Export XLS">
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv"><h3>Realizacija plana</h3>
+          <p><span name="idFinPlana">idPlana</span> - <span name="nazivFinPlana">nazivPlana</span></p></div>
+          
+       <div id="tabelaRealizacijaPlana" class="card mb-3">
+	       <div class="card-header">
+	          <div><p><b>Program: </b><span name="program"></span></p></div>
+	          <div><p><b>Programska aktivnost: </b><span name="programskaAkt"></span></p></div>
+	          <div><p><b>Funkcionalna klasifikacija: </b><span name="funKlasifikacija"></span></p></div>
+	        </div>
+	     <div class="card-body">
+	          <div class="table-responsive">
+	            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+	              <thead>
+	                <tr>
+	                  <th>Konto</th>
+	                  <th>Naziv</th>
+	                  <th>Planirano</th>
+	                  <th>Plaćeno</th>
+	                  <th>Na čekanju</th>
+	                  <th>Ukupno</th>
+	                  <th>%</th>
+	              </thead>
+	              <tfoot>
+	                <tr>
+              		  <th>Konto</th>
+	                  <th>Naziv</th>
+	                  <th>Planirano</th>
+	                  <th>Plaćeno</th>
+	                  <th>Na čekanju</th>
+	                  <th>Ukupno</th>
+	                  <th>%</th>
+	                </tr>
+	              </tfoot>
+	              <tbody>
+	                <tr>
+		             <td>111111</td>
+	                 <td>blablabla</td>
+	                 <td>2000.00</td>
+	                 <td>100.00</td>
+	                 <td>1900.00</td>
+	                 <td>3900.00</td>
+	                 <td>5%</td>
+	                </tr>
+	                
+	              </tbody>
+	            </table>
+	          </div>
+	        </div>
+      	</div>
+    </form>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    
+    $("#prikazi").click(function(){
+        $("#tabelaRealizacijaPlana").show();
+    });
+    
+    </script>
+
+</body>
+</div>
+</html>

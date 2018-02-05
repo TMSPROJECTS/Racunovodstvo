@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id="main">
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"> Osnovni Podaci</li>
+        <li class="breadcrumb-item"><a class = "pages" href="#" page_name="poslovniPartneri.html">Poslovni partneri</a></li>
+        <li class="breadcrumb-item active">Unos</li>
+      </ol>
+        <form action = "">
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="sifra">* Šifra</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="sifra" name="sifra" disabled>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="poslovnoIme">* Poslovno ime</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="poslovnoIme" name="poslovnoIme" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="skrPoslovnoIme">Skraćeno poslovno ime</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="skrPoslovnoIme" name="skrPoslovnoIme">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="mesto">* Mesto</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="mesto" name="mesto" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="adresa">Adresa</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="adresa" name="adresa">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="drzava">* Država</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="drzava" id="drzava" class="form-control form-control-sm" required>
+	             	 <option value = "" selected>-- Izaberite --</option>
+	             	</select>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="email">Email</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="email" name="email" type="email" aria-describedby="emailHelp">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="telefon">Telefon</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="telefon" name="telefon">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="fax">Fax</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="fax" name="fax">
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv">Poslovni podaci</div>
+          
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="datumOsnivanja">Datum osnivanja</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input type="date" class="form-control" id="datumOsnivanja" name="datumOsnivanja">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="pib">* PIB</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="pib" name="pib" required>
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="registarskiBr">Registarski broj</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="registarskiBr" name="registarskiBr">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="maticniBr">Matični broj</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="maticniBr" name="maticniBr">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="sifraDel">Šifra delatnosti</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="sifraDel" name="sifraDel">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="vrstaDel">Vrsta delatnosti</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <select name="vrstaDel" id="vrstaDel" class="form-control form-control-sm">
+	             	 <option value = "" selected>-- Izaberite --</option></select>
+	             </div>
+	          </div>
+          </div>
+          
+          <div class="separatorDiv">Podaci o kontakt osobama</div>
+          
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="direktor">Direktor</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	  <input class="form-control" id="direktor" name="direktor">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="telDirektora">Telefon direktora</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="telDirektora" name="telDirektora">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="finOsoba">Finansije (kontakt osoba)</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	<input class="form-control" id="finOsoba" name="finOsoba">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="finTel">Telefon finansije</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="finTel" name="finTel">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="komercijalaOsoba">Komercijala (kontakt osoba)</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="komercijalaOsoba" name="komercijalaOsoba">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+                 <label for="komercijalaTel">Telefon komercijala</label>
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="col-md-4">
+	             	 <input class="form-control" id="komercijalaTel" name="komercijalaTel">
+	             </div>
+	          </div>
+          </div>
+          <div class="row">
+              <div class="labela col-md-4">
+              </div>
+              <div class = "inputDiv col-md-8">
+	              <div class="saveButton">
+	             	 <input type="submit" class="btn btn-unos btn-xl js-scroll-trigger pages" value ="Sačuvaj">
+	             </div>
+	          </div>
+          </div>
+        </form>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>

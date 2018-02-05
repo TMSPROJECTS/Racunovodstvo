@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta name="description" content="">
+  <meta name="author" content="">
+  <title>Finansijski plan</title>
+  <!-- Bootstrap core CSS-->
+  <link href="../vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Custom fonts for this template-->
+  <link href="../vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+  <!-- Page level plugin CSS-->
+  <link href="../vendor/datatables/dataTables.bootstrap4.css" rel="stylesheet">
+  <!-- Custom styles for this template-->
+  <link href="../css/sb-admin.css" rel="stylesheet">
+</head>
+<div id=main>
+<body class="fixed-nav sticky-footer bg-dark" id="page-top">
+      <ol class="breadcrumb">
+     	<li class="breadcrumb-item active">Budžet</li>
+        <li class="breadcrumb-item active">Dokumenti</li>
+        <li class="breadcrumb-item active">Finansijski plan</li>
+      </ol>
+      <div class="card mb-3">
+       <div class="card-header">
+          <i class="fa fa-table"></i> Finansijski plan</div>
+          <div class ="row enterButton">
+          <a class="btn btn-primary btn-xl js-scroll-trigger pages" href="#" page_name="finansijskaSredstvaUnos.html">Novi unos</a></div>
+        <div class="card-body">
+          <div class="table-responsive">
+            <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+              <thead>
+                <tr>
+                  <th>B</th>
+                  <th>Zajednički naziv</th>
+                  <th>Konta</th>
+                  <th>Program</th>
+                  <th>Programska aktivnost</th>
+                  <th>Funkcija</th>
+                  <th>Korisnik</th>
+                  <th>Poslednja izmena</th>
+              </thead>
+              <tfoot>
+                <tr>
+               	  <th>B</th>
+                  <th>Zajednički naziv</th>
+                  <th>Konta</th>
+                  <th>Program</th>
+                  <th>Programska aktivnost</th>
+                  <th>Funkcija</th>
+                  <th>Korisnik</th>
+                  <th>Poslednja izmena</th>
+                </tr>
+              </tfoot>
+              <tbody>
+                <tr>
+                  <td>B</td>
+                  <td>Zajednički naziv</td>
+                  <td><a class = "pages" href="#" page_name="rasporedjenostSredstava.html">Konta</a></td>
+                  <td>Program</td>
+                  <td>Programska aktivnost</td>
+                  <td>Funkcija</td>
+                  <td>Korisnik</td>
+                  <td>Poslednja izmena</td> 
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+    <!-- Bootstrap core JavaScript-->
+    <script src="../vendor/jquery/jquery.min.js"></script>
+    <script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <!-- Core plugin JavaScript-->
+    <script src="../vendor/jquery-easing/jquery.easing.min.js"></script>
+    <!-- Page level plugin JavaScript-->
+    <script src="../vendor/datatables/jquery.dataTables.js"></script>
+    <script src="../vendor/datatables/dataTables.bootstrap4.js"></script>
+    <!-- Custom scripts for all pages-->
+    <script src="../js/sb-admin.min.js"></script>
+    <!-- Custom scripts for this page-->
+    <script src="../js/sb-admin-datatables.min.js"></script>
+  <script>
+    $(document).ready(function(){//this function load pages in the main div in html 
+		$('.pages').click(function(){	
+		var page_name = $(this).attr('page_name');
+		$('#main').load(page_name);
+		});
+	});
+    </script>
+
+</body>
+</div>
+</html>
