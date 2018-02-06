@@ -1,5 +1,5 @@
 ﻿function btnSave() {
-    var dok = "";
+    var dok = ""; 
     if (document.getElementById("dokument")) {
         dok = document.getElementById("dokument").value;
     }
